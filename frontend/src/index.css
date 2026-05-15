@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.stat-card {
+  transition: transform 0.15s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-overdue {
+  border-left: 4px solid #dc3545 !important;
+}
+
+.status-badge {
+  text-transform: capitalize;
+}
+
+.card-shadow {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
