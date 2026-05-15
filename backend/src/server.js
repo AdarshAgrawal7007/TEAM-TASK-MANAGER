@@ -46,7 +46,10 @@ app.use((err, req, res, next) => {
 
 const start = async () => {
   try {
-    const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/team-task-manager';
+    const uri = process.env.MONGODB_URI;
+    if (!uri) {
+      throw new Error('MONGODB_URI is required. Set it in backend/.env or your deployment environment.');
+    }
     await mongoose.connect(uri);
     console.log('MongoDB connected');
 

@@ -70,6 +70,8 @@ JWT_SECRET=change-this-to-a-long-random-string
 NODE_ENV=development
 ```
 
+> For deployment, set `MONGODB_URI` to your production MongoDB connection string and do not use `127.0.0.1:27017` in hosted environments.
+
 ### 3. Run (two terminals)
 
 **Terminal 1 — API:**
